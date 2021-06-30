@@ -4,7 +4,7 @@ const database = require("./database"); //import from database, depend on databa
 
 function get_all_products(){
 database.connection.query(
-    `select amount from transactions`, // mysql query in string format
+    `select * from products`, // mysql query in string format
     (error, result) => {
       if (error) {
         console.log(error);
